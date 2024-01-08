@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>capital</h1>
+        <table border="3px">
+            <tr>
+                <th>pk value</th>
+                <th>country_name</th>
+                <th>Capital_name</th>
+            </tr>
+        {% for i in capital %}
+         <tr>
+            <td>
+                {{i.pk}}
+            </td>
+            <td>
+                {{i.Country_name}}
+            </td> 
+            <td>
+                {{i.Capital_name}}
+            </td>
+         </tr>
+        {% endfor %}
+
+        </table>
+    </center>
+    
+</body>
+</html>
